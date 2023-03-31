@@ -1,77 +1,99 @@
+/* Style body */
 body {
-  background-color: black;
+  background-color: #000000;
+  color: #ffffff;
   font-family: Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  margin: 0;
+  padding: 0;
 }
 
 /* Style header */
 header {
-  text-align: center;
-  padding: 20px;
-  background-image: url('90s_bg.png');
+  position: relative;
+  height: 200px;
+  background-color: #000000;
+  background-image: url('img/90s_bg.png');
   background-size: cover;
-  color: white;
-}
-
-/* Style h1 in header */
-header h1 {
-  font-size: 48px;
-  margin: 0;
-}
-
-/* Style images in icon-scroll */
-.icon-scroll img {
-  width: 100px;
-  height: 100px;
-  margin-right: 20px;
-}
-
-/* Style big-button */
-.big-button {
-  display: inline-block;
-  background-color: red;
-  color: white;
-  font-size: 24px;
-  padding: 10px 20px;
-  text-decoration: none;
-  border-radius: 10px;
-  margin-top: 20px;
-}
-
-/* Style big-button on hover */
-.big-button:hover {
-  background-color: darkred;
-}
-
-.non-looping-gif {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 100%;
-  height: 100%;
-}
-.icon-scroll {
-  display: flex;
+  background-position: center;
   overflow: hidden;
 }
 
-.icon {
-  animation: pan 20s linear infinite;
-  margin-right: 50px;
+/* Style header overlay */
+.header-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
-@keyframes pan {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(-200%);
-  }
+/* Style images in header */
+.gif-left, .gif-middle, .gif-right {
+  position: absolute;
+  height: 200px;
 }
-.bottom-right {
+
+.gif-left {
+  left: 0;
+  z-index: 3;
+}
+
+.gif-middle {
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 3;
+}
+
+.gif-right {
+  right: 0;
+  z-index: 3;
+}
+
+/* Style scroll icons */
+.scroll-icons {
   position: fixed;
   bottom: 0;
-  right: 0;
-  width: 100px;
-  height: 100px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  background-color: #000000;
+  z-index: 2;
+}
+
+.scroll-icons img {
+  height: 80px;
+  width: 40px;
+  margin: 0 20px;
+}
+
+/* Style merch button */
+.merch-button {
+  display: block;
+  margin: 50px auto;
+  padding: 20px 40px;
+  background-color: #ff69b4;
+  border-radius: 5px;
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+  color: #000000;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+}
+
+.merch-button:hover {
+  background-color: #ffffff;
+  color: #000000;
+  transform: scale(1.5);
+}
+
+/* Hide audio elements */
+audio {
+  display: none;
 }
