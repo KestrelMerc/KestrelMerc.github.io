@@ -54,19 +54,19 @@
       <img class="non-looping-gif" src="img/sparklegif.gif">
     <script>
     
-    var audio1 = new Audio('sound/sparklesound.mp3');
+    var audio1 = new Audio('audio/sparklesound.mp3');
     audio1.autoplay = true;
     audio1.hidden = true;
     document.body.appendChild(audio1);
 	setTimeout(function() {
-      var audio2 = new Audio('sound/musiclmao.mp3');
+      var audio2 = new Audio('audio/musiclmao.mp3');
       audio2.autoplay = true;
       audio2.loop = true;
       audio2.hidden = true;
       document.body.appendChild(audio2);
     }, 2500);
     setTimeout(function() {
-            var gif = document.querySelector(".non-looping-gif");
+            var gif = document.querySelector("non-looping-gif");
             gif.parentNode.removeChild(gif);
           }, 5000);
     </script>
