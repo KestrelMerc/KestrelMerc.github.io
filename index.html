@@ -26,6 +26,10 @@
 			display: none;
 		}
 		.scroll-icons {
+			display: flex;
+			flex-wrap: nowrap;
+			overflow-x: auto;
+			-webkit-overflow-scrolling: touch;
 			position: fixed;
 			bottom: 0;
 			width: 100%;
@@ -37,8 +41,8 @@
 			z-index: 2;
 		}
 		.scroll-icons img {
-			height: 80px;
-			width: 40px
+			height: 120px;
+			width: 80px
 			margin: 0 20px;
 		}
 		.merch-button {
@@ -57,15 +61,15 @@
 		.merch-button:hover {
 			background-color: #ffffff;
 			color: #000000;
-			transform: scale(1.5);
+			transform: scale(1.1);
 	</style>
 </head>
 <body>
 	<audio id="sound-effect" src="audio/sparklesound.mp3" autoplay></audio>
 	<header>
-		<img src="img/cube.gif">
-		<img src="img/kestrelmercLOGO.gif">
-		<img src="img/kestrelmerc2.gif">
+		<img class="gif-left" src="img/cube.gif">
+		<img class="gif-middle" src="img/kestrelmercLOGO.gif">
+		<img class="gif-right" src="img/kestrelmerc2.gif">
 		<div class="header-overlay"></div>
 	</header>
 	<div class="scroll-icons">
