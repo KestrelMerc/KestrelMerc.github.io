@@ -12,7 +12,7 @@ body {
 /* Style header */
 header {
   position: relative;
-  height: 200px;
+  height: 250px;
   background-color: #000000;
   background-image: url('img/90s_bg.png');
   background-size: cover;
@@ -33,24 +33,22 @@ header {
 /* Style images in header */
 .gif-left, .gif-middle, .gif-right {
   position: absolute;
-  height: 200px;
+  height: 100px;
+  width: 100px;
 }
 
 .gif-left {
-  position: absolute;
   top: 0;
   left: 0;
 }
 
 .gif-middle {
-  position: absolute;
   top: 0;
   left: 50%;
   transform: translateX(-50%);
 }
 
 .gif-right {
-  position: absolute;
   top: 0;
   right: 0;
 }
