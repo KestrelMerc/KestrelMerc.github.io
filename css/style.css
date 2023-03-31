@@ -37,22 +37,6 @@ header {
   width: 100px;
 }
 
-.gif-left {
-  top: 0;
-  left: 0;
-}
-
-.gif-middle {
-  top: 0;
-  left: 50%;
-  transform: translateX(-50%);
-}
-
-.gif-right {
-  top: 0;
-  right: 0;
-}
-
 /* Style scroll icons */
 .scroll-icons {
   position: fixed;
