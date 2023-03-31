@@ -1,129 +1,66 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <link rel="icon" type="image/gif" href="img/k.gif">
-	<title>Ayy girl welcome to my site! hah..</title>
-	<style>
-		body {
-			background-color: #000000;
-			background-image: url("img/backgroundyup.gif");
-			background-repeat: repeat;
-			background-size: contain;
-			color: #ffffff;
-			font-family: Arial, sans-serif;
-			font-size: 16px;
-			line-height: 1.5;
-			margin: 0;
-			padding: 0;
-		}
-		header {
-			position: relative;
-			height: 150px;
-			background-color: #000000;
-			background-image: url('img/90s_bg.png');
-			background-size: cover;
-			background-position: center;
-			overflow: hidden;
-		}
-		audio {
-			display: none;
-		}
-		.scroll-icons {
-			display: flex;
-			flex-wrap: nowrap;
-			overflow-x: auto;
-			-webkit-overflow-scrolling: touch;
-			position: fixed;
-			bottom: 0;
-			width: 100%;
-			display: flex;
-			align-items: center;
-			justify-content: center;
-			padding: 20px;
-			background-color: transparent;
-			z-index: 1000;
-		}
-		.scroll-icons img {
-			height: 120px;
-			width: 80px;
-			margin: 0 20px;
-			z-index: 1000;
-		}
-		.massive-gif {
-			width: 1600px;
-			height: 1200px;
-			z-index: 9999;
-		}
-		.merch-button {
-			z-index: 3;
-			display: block;
-			margin: 50px auto;
-			padding: 15px 25px;
-			background-color: #333333;
-			border-radius: 20px;
-			text-align: center;
-			font-size: 16px;
-			font-weight: bold;
-			color: #000000;
-			text-decoration: none;
-			animation: flash 0.5s infinite;
-			transition: all 0.3s ease-in-out;
-			width: 120px;
-			height: 60px;
-			line-height: 30px;
-			background-image: url('img/button.gif');
-			background-size: contain;
-			background-repeat: repeat;
-			background-position: center;
-		}
-		@keyframes flash {
-			0% {
-				color: #ffffff;
-			}
-			50% {
-			color: #ff69b4;
-			}
-			100% {
-			color: #ffffff;
-		}
-		.merch-button:hover {
-			background-color: #ffffff;
-			color: #000000;
-			transform: scale(1.1);
-		}
-		
-	</style>
-</head>
-<body>
-	<audio id="sound-effect" src="audio/sparklesound.mp3" autoplay></audio>
-	<header>
-		<img src="img/cube.gif">
-		<img src="img/kestrelmercLOGO.gif">
-		<img src="img/kestrelmerc2.gif">
-		<div class="header-overlay"></div>
-	</header>
-	<div style="position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%);">
-		<img src="img/sparklegif.gif" alt="Massive GIF" class="massive-gif">
-	</div>
-	<div class="scroll-icons">
-		<img src="img/shirt 1.png" alt="Scroll Icon">
-		<img src="img/shirt2.png" alt="Scroll Icon">
-		<img src="img/towel.png" alt="Scroll Icon">
-	</div>
-	<a href="https://www.teepublic.com/user/viral-s-tees" class="merch-button" target="_blank">MERCH</a>
-	<audio id="background-music" src="audio/musiclmao.mp3" loop></audio>
-	<script>
-		const soundEffect = document.getElementById("sound-effect");
-		const backgroundMusic = document.getElementById("background-music");
-
-		soundEffect.addEventListener("ended", () => {
-			backgroundMusic.play();
-		});
-		const gif = document.querySelector('.massive-gif');
-
-		setTimeout(() => {
-			gif.remove();
-		}, 4800);
-	</script>
-</body>
+  <head>
+	<link rel="icon" type="image/gif" href="img/k.gif">
+    <title>Hey girl! Welcome to my site.. stay as long as you like.. aha</title>
+    <style>
+      /* Add your CSS styles for the banner section here */
+      #banner {
+        background-image: url('img/90s_bg.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 300px;
+        position: relative;
+      }
+      #banner h1 {
+        font-size: 36px;
+        color: #ffffff;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+      #banner #icon1 {
+        position: absolute;
+        top: 10px;
+        left: 10px;
+      }
+      #banner #icon2 {
+        position: absolute;
+        top: 50%;
+        left: 10px;
+        transform: translateY(-50%);
+      }
+      #banner #icon3 {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="banner">
+      <img src="img/cube.gif" alt="Icon 1" id="icon1">
+      <img src="img/kestrelmercLOGO.gif" alt="Icon 2" id="icon2">
+      <img src="img/kestrelmerc2.gif" alt="Icon 3" id="icon3">
+      <h1>Your Banner Heading Here</h1>
+    </div>
+    <div id="button">
+      <a href="https://www.youtube.com/" target="_blank"><button>Watch Now</button></a>
+    </div>
+    <audio id="bgmusic" loop autoplay>
+      <source src="audio/musiclmao.mp3" type="audio/mpeg">
+    </audio>
+    <script>
+      // Add your JavaScript code for the gif overlay and sound effects here
+      window.onload = function() {
+        var gif = document.getElementById('gif');
+        gif.addEventListener('click', function() {
+          var audio = new Audio('sound-effect.mp3');
+          audio.play();
+          gif.style.display = 'none';
+        });
+      }
+    </script>
+  </body>
 </html>
