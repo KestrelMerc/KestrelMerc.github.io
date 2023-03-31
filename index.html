@@ -4,12 +4,50 @@
 	<link rel="icon" type="image/gif" href="img/k.gif">
     <title>Hey girl! Welcome to my site.. stay as long as you like.. aha</title>
     <style>
-      /* Add your CSS styles for the banner section here */
+      body {
+        background-image: url('img/backgroundyup.gif');
+        background-repeat: repeat;
+        background-size: contain;
+      }
+	  #button {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		width: 250px;
+		height: 150px;
+		background-image: url('sparklegif.gif');
+		background-repeat: repeat;
+	}
+      }
+      #button img {
+        width: 120%;
+        height: 100%;
+        object-fit: contain;
+      }
+      #button video {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 10%;
+        height: 15%;
+        object-fit: cover;
+      }
+	  #button span {
+		animation-name: blink;
+		animation-duration: 1s;
+		animation-iteration-count: infinite;
+	}
+	@keyframes blink {
+		from { opacity: 1; }
+		to { opacity: 0; }
+	}
       #banner {
         background-image: url('img/90s_bg.png');
         background-repeat: no-repeat;
         background-size: cover;
-        height: 300px;
+		background-repeat: repeat;
+        height: 250px;
         position: relative;
       }
       #banner h1 {
@@ -22,19 +60,12 @@
       }
       #banner #icon1 {
         position: absolute;
-        top: 10px;
-        left: 10px;
+        top: 50px;
+        left: 200px;
       }
       #banner #icon2 {
         position: absolute;
         top: 50%;
-        left: 10px;
-        transform: translateY(-50%);
-      }
-      #banner #icon3 {
-        position: absolute;
-        top: 10px;
-        right: 10px;
       }
     </style>
   </head>
@@ -43,10 +74,9 @@
       <img src="img/cube.gif" alt="Icon 1" id="icon1">
       <img src="img/kestrelmercLOGO.gif" alt="Icon 2" id="icon2">
       <img src="img/kestrelmerc2.gif" alt="Icon 3" id="icon3">
-      <h1>Your Banner Heading Here</h1>
     </div>
     <div id="button">
-      <a href="https://www.youtube.com/" target="_blank"><button>Watch Now</button></a>
+      <a href="https://www.teepublic.com/user/viral-s-tees" target="_blank"><img src="img/button.gif" alt="Play Video" id="gif"></a>
     </div>
     <audio id="bgmusic" loop autoplay>
       <source src="audio/musiclmao.mp3" type="audio/mpeg">
@@ -58,7 +88,6 @@
         gif.addEventListener('click', function() {
           var audio = new Audio('sound-effect.mp3');
           audio.play();
-          gif.style.display = 'none';
         });
       }
     </script>
