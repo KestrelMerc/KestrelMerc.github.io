@@ -1,62 +1,73 @@
-<!doctype html>
-<html lang="en">
-
-<head>
-  <meta charset="utf-8">
-  <title>Page Not Found</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <style>
-    * {
-      line-height: 1.2;
-      margin: 0;
-    }
-
-    html {
-      color: #888;
-      display: table;
-      font-family: sans-serif;
-      height: 100%;
-      text-align: center;
-      width: 100%;
-    }
-
-    body {
-      display: table-cell;
-      vertical-align: middle;
-      margin: 2em auto;
-    }
-
-    h1 {
-      color: #555;
-      font-size: 2em;
-      font-weight: 400;
-    }
-
-    p {
-      margin: 0 auto;
-      width: 280px;
-    }
-
-    @media only screen and (max-width: 280px) {
-
-      body,
-      p {
-        width: 95%;
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Welcome to my website, girl *hah* Enjoy your stay</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="icon" type="image/gif" href="k.gif">
+    <style>
+      .icon-scroll {
+        display: flex;
+        overflow: hidden;
       }
 
-      h1 {
-        font-size: 1.5em;
-        margin: 0 0 0.3em;
+      .icon {
+        animation: pan 20s linear infinite;
+        margin-right: 50px;
       }
 
-    }
-  </style>
-</head>
+      @keyframes pan {
+        0% {
+          transform: translateX(0);
+        }
+        100% {
+          transform: translateX(-200%);
+        }
+      }
+	body {
+		background-color: #ffffff;
+		background-image: url("stars.gif");
+        background-repeat: repeat;
+        background-position: center;
+        background-size: cover;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1></h1>
+      <img src="kestrelmercLOGO.gif" alt="Banner image">
+    </header>
+    <section>
+      <div class="icon-scroll">
+        <div class="icon"><img src="kestrelsaprk.gif" alt="oh hey girl"></div>
+        <div class="icon"><img src="shirt2.png" alt="Icon 2"></div>
+        <div class="icon"><img src="shirt 1 copy.png" alt="Icon 3"></div>
+		<div class="icon"><img src="sticker lineup.png" alt="Icon"></div>
+	 </div>
+	 <img class="bottom-left" src="sparklykestrel.gif">
+    </section>
+    <div class="button-container">
+      <a href="https://www.teepublic.com/user/viral-s-tees" target="_blank" class="big-button">MERCH</a>
+    </div>
+      <img class="non-looping-gif" src="sparklegifnoloop.gif">
+    <script>
+    
+    var audio1 = new Audio('sparklesound.mp3');
+    audio1.autoplay = true;
+    audio1.hidden = true;
+    document.body.appendChild(audio1);
 
-<body>
-  <h1>Page Not Found</h1>
-  <p>Sorry, but the page you were trying to view does not exist.</p>
-</body>
-
+    setTimeout(function() {
+      var audio2 = new Audio('musiclmao.mp3');
+      audio2.autoplay = true;
+      audio2.loop = true;
+      audio2.hidden = true;
+      document.body.appendChild(audio2);
+    }, 2500);
+    setTimeout(function() {
+            var gif = document.querySelector(".non-looping-gif");
+            gif.parentNode.removeChild(gif);
+          }, 5000);
+    </script>
+  </body>
 </html>
-<!-- IE needs 512+ bytes: https://docs.microsoft.com/archive/blogs/ieinternals/friendly-http-error-pages -->
