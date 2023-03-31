@@ -1,0 +1,77 @@
+body {
+  background-color: black;
+  font-family: Arial, sans-serif;
+}
+
+/* Style header */
+header {
+  text-align: center;
+  padding: 20px;
+  background-image: url('90s_bg.png');
+  background-size: cover;
+  color: white;
+}
+
+/* Style h1 in header */
+header h1 {
+  font-size: 48px;
+  margin: 0;
+}
+
+/* Style images in icon-scroll */
+.icon-scroll img {
+  width: 100px;
+  height: 100px;
+  margin-right: 20px;
+}
+
+/* Style big-button */
+.big-button {
+  display: inline-block;
+  background-color: red;
+  color: white;
+  font-size: 24px;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+
+/* Style big-button on hover */
+.big-button:hover {
+  background-color: darkred;
+}
+
+.non-looping-gif {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100%;
+}
+.icon-scroll {
+  display: flex;
+  overflow: hidden;
+}
+
+.icon {
+  animation: pan 20s linear infinite;
+  margin-right: 50px;
+}
+
+@keyframes pan {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-200%);
+  }
+}
+.bottom-right {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  width: 100px;
+  height: 100px;
+}
