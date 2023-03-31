@@ -9,13 +9,11 @@
         display: flex;
         overflow: hidden;
       }
-
-      .icon {
+	        .icon {
         animation: pan 20s linear infinite;
         margin-right: 50px;
       }
-
-      @keyframes pan {
+	   @keyframes pan {
         0% {
           transform: translateX(0);
         }
@@ -56,8 +54,7 @@
     audio1.autoplay = true;
     audio1.hidden = true;
     document.body.appendChild(audio1);
-
-    setTimeout(function() {
+	setTimeout(function() {
       var audio2 = new Audio('musiclmao.mp3');
       audio2.autoplay = true;
       audio2.loop = true;
