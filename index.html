@@ -16,27 +16,6 @@
 			margin: 0;
 			padding: 0;
 		}
-		.overlay {
-			position: fixed;
-			top: 0;
-			left: 0;
-			width: 100%;
-			height: 100%;
-			background-image: url('img/sparklegif.gif');
-			background-repeat: no-repeat;
-			background-position: center;
-			background-size: cover;
-			<!-- animation: fadeOut 2.2s forwards; -->
-		}
-
-		@keyframes fadeOut {
-			0% {
-				opacity: 1;
-			}
-			100% {
-				opacity: 0;
-			}
-	}
 		header {
 			position: relative;
 			height: 150px;
@@ -62,18 +41,24 @@
 			justify-content: center;
 			padding: 20px;
 			background-color: transparent;
-			z-index: 2;
+			z-index: 1000;
 		}
 		.scroll-icons img {
 			height: 120px;
 			width: 80px;
 			margin: 0 20px;
+			z-index: 1000;
+		}
+		.massive-gif {
+			width: 1600px;
+			height: 1200px;
+			z-index: 9999;
 		}
 		.merch-button {
 			z-index: 3;
 			display: block;
 			margin: 50px auto;
-			padding: 10px 20px;
+			padding: 15px 25px;
 			background-color: #333333;
 			border-radius: 20px;
 			text-align: center;
@@ -81,10 +66,10 @@
 			font-weight: bold;
 			color: #000000;
 			text-decoration: none;
-			animation: flash 1s infinite;
+			animation: flash 0.5s infinite;
 			transition: all 0.3s ease-in-out;
-			width: 100px;
-			height: 40px;
+			width: 120px;
+			height: 60px;
 			line-height: 30px;
 			background-image: url('img/button.gif');
 			background-size: contain;
@@ -101,7 +86,6 @@
 			100% {
 			color: #ffffff;
 		}
-}
 		.merch-button:hover {
 			background-color: #ffffff;
 			color: #000000;
@@ -118,6 +102,9 @@
 		<img src="img/kestrelmerc2.gif">
 		<div class="header-overlay"></div>
 	</header>
+	<div style="position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%);">
+		<img src="img/sparklegif.gif" alt="Massive GIF" class="massive-gif">
+	</div>
 	<div class="scroll-icons">
 		<img src="img/shirt 1.png" alt="Scroll Icon">
 		<img src="img/shirt2.png" alt="Scroll Icon">
@@ -132,6 +119,11 @@
 		soundEffect.addEventListener("ended", () => {
 			backgroundMusic.play();
 		});
+		const gif = document.querySelector('.massive-gif');
+
+		setTimeout(() => {
+			gif.remove();
+		}, 4800);
 	</script>
 </body>
 </html>
