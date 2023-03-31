@@ -67,17 +67,15 @@
 	</header>
 	<div class="scroll-icons">
 		<img src="img/shirt 1.png" alt="Scroll Icon">
-		<img src="img/shirt 2.png" alt="Scroll Icon">
+		<img src="img/shirt2.png" alt="Scroll Icon">
 		<img src="img/towel.png" alt="Scroll Icon">
 	</div>
 	<a href="https://www.teepublic.com/user/viral-s-tees" class="merch-button">MERCH</a>
-	<audio id="background-music" src="audio/musiclmao.mp3"></audio>
+	<audio id="background-music" src="audio/musiclmao.mp3" loop></audio>
 	<script>
-		// Get the sound effect and background music elements
 		const soundEffect = document.getElementById("sound-effect");
 		const backgroundMusic = document.getElementById("background-music");
 
-		// Delay playing the background music until the sound effect has finished playing
 		soundEffect.addEventListener("ended", () => {
 			backgroundMusic.play();
 		});
