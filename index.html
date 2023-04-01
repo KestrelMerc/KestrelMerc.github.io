@@ -11,8 +11,14 @@
 	<img class="promo-image" src="img/sparklykestrel.gif" alt="Image3" style="width: 200px; height: 200px;">
 	</header>
 	<style>
-		html, body {
+		body {
 			cursor: url("img/purple_star.gif"), auto;
+		}
+		a:hover {
+			cursor: url("img/paperkestrel.png"), pointer;
+		}
+		@keyframes play-once {
+			to { opacity: 0; }
 		}
 		header {
 			position: absolute;
@@ -24,10 +30,9 @@
 			background-size: cover;
 		}
 		.logo {
-		float: left;
-		margin-right: 20px;
+			float: left;
+			margin-right: 20px;
 		}
-
 		.header-image {
 			display: block;
 			margin-left: 500px;
@@ -230,11 +235,21 @@
 			<img src="img/logosticker.png">
 			<img src="img/robot.gif">
 		</div>
-	<audio autoplay>
+	<audio autoplay id="sparkleSound">
 		<source src="audio/sparklesound.mp3" type="audio/mpeg">
-	<audio autoplay loop>
+	</audio>
+	<audio loop id="backgroundMusic">
 		<source src="audio/musiclmao.mp3" type="audio/mpeg">
 	</audio>
-	</div>
+	<script>
+		window.addEventListener('load', function() {
+			var sparkleSound = document.getElementById('sparkleSound');
+			sparkleSound.play();
+		});
+		var backgroundMusic = document.getElementById('backgroundMusic');
+		sparkleSound.addEventListener('ended', function() {
+			backgroundMusic.play();
+		});
+	</script>
 </body>
 </html>
