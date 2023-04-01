@@ -7,27 +7,32 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<header>
 	<img class="logo" src="img/cube.gif" alt="Image1" style="width: 200px; height: 200px;">
-	<img class="header-image" src="img/kestrelmercLOGO.gif" alt="Image2" style="width: 400px; height: 100px;">
-	<img class="promo-image" src="img/kestrelspark.gif" alt="Image3" style="width: 100px; height: 100px;">
+	<img class="header-image" src="img/kestrelmercLOGO.gif" alt="Image2" style="width: 600px; height: 100px;">
+	<img class="promo-image" src="img/kestrelspark.gif" alt="Image3" style="width: 200px; height: 200px;">
 	</header>
 	<style>
 		header {
+			position: absolute;
+			margin: 0
 			background-color: #000000;
 			height: 200px;
+			width: 2000px;
 			background-image: url("img/90s_bg.png");
-			background-repeat: no-repeat;
+			background-repeat: repeat;
 			background-size: cover;
 		}
 		.logo {
-			margin-left: 20px;
+		float: left;
+		margin-right: 20px;
 		}
 
 		.header-image {
-			width: 50%;
-			margin-top: 60px;
+			display: block;
+			margin: 10px 0 0 40px;
 		}
 
 		.promo-image {
+			float: right;
 			margin-right: 20px;
 		}
 		body {
@@ -79,7 +84,7 @@
 		
 		.btn {
 			position: absolute;
-			top: calc(50% - 75px);
+			top: calc(50% - 100px);
 			left: calc(50% - 50px);
 			display: inline-block;
 			padding: 10px 20px;
@@ -103,21 +108,19 @@
 		}
 
 		.icons a {
-			bottom: calc(50%-50px);
+			border: none;
+			bottom: calc(50%-100px);
 			display: inline-block;
-			margin: 10px;
-			padding: 5px;
-			background-color: #FFFFFF;
+			margin: 15px;
+			background-color: transparent;
 			color: #000000
-			border-radius: 50%;
-			width: 50px;
-			height: 50px;
-			line-height: 50px;
+			border-radius: 10%;
+			width: 60px;
+			height: 10px;
+			line-height: 10px;
 			font-size: 24px;
 			text-align: center;
 			text-decoration: none;
-			box-shadow: 2px 2px 2px #888888;
-			transform: rotate(-15deg);
 		}
 
 		.gifs {
@@ -126,26 +129,26 @@
 			justify-content: center;
 			margin: 50px 0;
 			animation-name: scroll;
-			animation-duration: 60s;
 			animation-timing-function: linear;
-			animation-delay: 15s;
 			overflow: hidden;
 			white-space: nowrap;
 		}
 		.gifs img {
 			max-width: 300px;
-			max-height: 300px;
-			margin: 10px;
-			box-shadow: 2px 2px 2px #888888;
+			margin: 40px;
 			transform: rotate(-15deg);
 			display: inline-block;
-    		width: 100px;
+    		width: 140px;
 		}
 		.gifs-wrapper {
 			display: inline-block;
-			animation: scroll 10s linear infinite;
+			overflow: hidden;
+			animation: scroll 15s linear infinite;
+			position: absolute;
+			top: 35%;
+			transform: translateY(-50%);
+			right: 0;
 		}
-
 		@keyframes scroll {
 			0% { transform: translateX(0); }
 			100% { transform: translateX(-100%); }
@@ -182,18 +185,22 @@
 	<h1 class="rainbow-text">CONCERT TICKETS AVAILABLE SOON!</h1>
 	<button class="btn" onclick="window.open('https://www.teepublic.com/user/viral-s-tees', '_blank')">MERCH</button>
 	<div class="icons">
-		<a href="#"><i class="fa fa-facebook"></i></a>
-		<a href="#"><i class="fa fa-twitter"></i></a>
-		<a href="#"><i class="fa fa-instagram"></i></a>
-		<a href="#"><i class="fa fa-youtube"></i></a>
+		<a href="#"><img src="img/starspin.gif" alt="Lava Lamp"></a>
+		<a href="#"><img src="img/lampmst.gif" alt="Lava Lamp"></a>
+		<a href="#"><img src="img/laptop.gif" alt="SSAlmao"></a>
+		<a href="#"><img src="img/compoot.png" alt="computer"></a>
 	</div>
 	<div class="gifs">
 		<div class="gifs-wrapper">
 			<img src="img/shirt 1.png">
 			<img src="img/shirt2.png">
-			<img src="img/cube.png">
 			<img src="img/towel.png">
-			<img src="https://media.giphy.com/media/">
+			<img src="img/chadsticker.png">
+			<img src="img/kestrelsticker.png">
+			<img src="img/chancesticker.png">
+			<img src="img/kirk_sticker.png">
+			<img src="img/mindctrlsticker.png">
+			<img src="img/logosticker.png">
 		</div>
 	<audio autoplay>
 		<source src="audio/sparklesound.mp3" type="audio/mpeg">
