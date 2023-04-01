@@ -15,9 +15,9 @@
 			cursor: url("img/purple_star.gif"), auto;
 			margin: 0;
 			padding: 0;
-			background-image: url("img/Jeeves.png");
+			background-image: url("img/backgroundyup.gif");
 			background-repeat: repeat;
-			background-size: contain;
+			background-size: cover;
 			background-position: center;
 		}
 		a:hover {
@@ -28,7 +28,7 @@
 			z-index: 0;
 			background-image: url("img/backgroundyup.gif");
 			background-repeat: repeat;
-			background-size: contain;
+			background-size: cover;
 			background-position: center;
 		}
 		@keyframes fade-out {
@@ -242,8 +242,8 @@
 	</style>
 </head>
 <body>
+	<img src="img/backgroundyup.gif">
 	<p class="soundtext">If you can't hear my music, then you must be blocking it girl!</p>
-	<img src="img/Jeeves.png" alt="ewe">
 	<h1 class="rainbow-text">CONCERT TICKETS AVAILABLE SOON!</h1>
 	<button class="btn" onclick="window.open('https://www.teepublic.com/user/viral-s-tees', '_blank')">MERCH</button>
 	<div class="icons">
@@ -277,8 +277,6 @@
 	<audio loop id="backgroundMusic">
 		<source src="audio/musiclmao.mp3" type="audio/mpeg">
 	</audio>
-
-<button onclick="toggleSound()">Toggle Sound</button>
 	<script>
 		window.addEventListener('load', function() {
 			var sparkleSound = document.getElementById('sparkleSound');
