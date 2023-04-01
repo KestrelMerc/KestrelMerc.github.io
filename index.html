@@ -204,7 +204,7 @@
 		}
 		.rainbow-text {
 			position: relative;
-			top: -450px;
+			top: -300px;
 			right: -50px;
 			animation: rainbow 1s linear infinite;
 		}
@@ -230,9 +230,12 @@
 			100% {
 				color: violet;
 			}
+		button {
+			margin-top: -100px;
+		}
 		.my-text {
 			position: absolute;
-			top: 300px;
+			top: 200px;
 			left: 50px;
 		}
 	}
@@ -274,6 +277,8 @@
 	<audio loop id="backgroundMusic">
 		<source src="audio/musiclmao.mp3" type="audio/mpeg">
 	</audio>
+
+<button onclick="toggleSound()">Toggle Sound</button>
 	<script>
 		window.addEventListener('load', function() {
 			var sparkleSound = document.getElementById('sparkleSound');
