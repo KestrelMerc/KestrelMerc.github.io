@@ -153,15 +153,18 @@
 		.gifs-wrapper {
 			display: inline-block;
 			overflow: hidden;
-			animation: scroll 15s linear infinite;
+			animation: scroll 20s linear infinite;
 			position: absolute;
 			top: 35%;
-			transform: translateY(-50%);
-			right: 0;
+			transform: translateY(-50%) transformX(100%);
+			left: 150%;
+			width: 350%;
+			animation-direction: alternate;
 		}
 		@keyframes scroll {
 			0% { transform: translateX(0); }
 			100% { transform: translateX(-100%); }
+			101% { transform: translateX(100%); }
 		}
 		.rainbow-text {
 			position: relative;
@@ -210,6 +213,7 @@
 	</div>
 	<div class="gifs">
 		<div class="gifs-wrapper">
+			<img src="img/robot.gif">
 			<img src="img/shirt 1.png">
 			<img src="img/shirt2.png">
 			<img src="img/towel.png">
