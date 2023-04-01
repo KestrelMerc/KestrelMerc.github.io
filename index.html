@@ -106,21 +106,30 @@
 		}
 
 		.icons a {
+			animation: hover 1s infinite;
 			border: none;
-			bottom: calc(50%-100px);
+			bottom: calc(50%-75px);
 			display: inline-block;
 			margin: 20px;
 			background-color: transparent;
 			color: #000000
 			border-radius: 10%;
 			width: 60px;
+			max-height: 50px;
 			height: 5px;
 			line-height: 10px;
 			font-size: 24px;
 			text-align: center;
 			text-decoration: none;
 		}
-
+		@keyframes hover {
+			0%, 100% {
+				transform: translateY(0);
+			}
+			50% {
+				transform: translateY(-10px);
+			}
+		}
 		.gifs {
 			display: flex;
 			flex-wrap: wrap;
@@ -185,10 +194,16 @@
 	<h1 class="rainbow-text">CONCERT TICKETS AVAILABLE SOON!</h1>
 	<button class="btn" onclick="window.open('https://www.teepublic.com/user/viral-s-tees', '_blank')">MERCH</button>
 	<div class="icons">
-		<a href="#"><img src="img/starspin.gif" alt="Lava Lamp"></a>
+		<a href="#"><img src="img/starspin.gif" alt="it spin"></a>
+		<a href="#"><img src="img/dice.gif" alt="dicem"></a>
 		<a href="#"><img src="img/lampmst.gif" alt="Lava Lamp"></a>
 		<a href="#"><img src="img/laptop.gif" alt="SSAlmao"></a>
 		<a href="#"><img src="img/compoot.gif" alt="computer"></a>
+		<a href="#"><img src="img/robot.gif" alt="robo"></a>
+		<a href="#"><img src="img/note.gif" alt="note"></a>
+		<a href="#"><img src="img/plane.gif" alt="plane weee"></a>
+		<a href="#"><img src="img/zemusic.gif" alt="note2"></a>
+		<a href="#"><img src="img/ayamusic.gif" alt="beebooboobop"></a>
 	</div>
 	<div class="gifs">
 		<div class="gifs-wrapper">
