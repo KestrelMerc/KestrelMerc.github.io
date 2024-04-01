@@ -61,6 +61,10 @@ body {
     z-index: 1;
 }
 
+.btn:hover {
+    cursor: url("https://i.gifer.com/XVny.gif"), auto;
+}
+
 
 
 
