@@ -16,7 +16,7 @@ body, header, main, nav, footer, h1, div, img, ul, figure, figcaption, section, 
 }
 
 body {
-    background-image: ;
+    background-image: url("https://i.gifer.com/WBVk.gif");
     background-attachment: fixed;
     background-repeat: repeat;
     background-position: center;
@@ -30,8 +30,8 @@ body {
     left: 50%;
     display: inline-block;
     padding: 10px 20px;
-    background-image: url("images/button.gif");
-    color: #fff;
+    background-image: url("https://i.gifer.com/7ZlE.gif");
+    color: #ffff;
     border-radius: 5px;
     z-index: 1;
 }
