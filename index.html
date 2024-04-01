@@ -1,296 +1,67 @@
 <!DOCTYPE html>
-<html>
+<!--This website template was created by: Chris Dillanes -->
+<html lang="en">
 <head>
-	<link rel="icon" type="image/gif" href="img/k.gif">
-	<title>Ayy girl welcome to my site! hah..</title>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<header>
-	<img class="logo" src="img/cube.gif" alt="Image1" style="width: 200px; height: 200px;">
-	<img class="header-image" src="img/kestrelmercLOGO.gif" alt="Image2" style="width: 600px; height: 100px;">
-	<img class="promo-image" src="img/sparklykestrel.gif" alt="Image3" style="width: 200px; height: 200px;">
-	</header>
-	<style>
-		body {
-			cursor: url("img/purple_star.gif"), auto;
-			margin: 0;
-			padding: 0;
-			background-image: url("img/backgroundyup.gif");
-			background-repeat: repeat;
-			background-size: cover;
-			background-position: center;
-		}
-		a:hover {
-			cursor: url("img/paperkestrel.png"), pointer;
-		}
-		.main-content {
-			position: relative;
-			z-index: 0;
-			background-image: url("img/backgroundyup.gif");
-			background-repeat: repeat;
-			background-size: cover;
-			background-position: center;
-		}
-		@keyframes fade-out {
-			0% {
-				opacity: 1;
-			}
-			100% {
-				opacity: 0;
-			}
-		}
-		header {
-			position: relative;
-			margin: 0
-			background-color: #000000;
-			height: 200px;
-			width: 2000px;
-			background-repeat: repeat;
-			z-index: 1;
-		}
-		.logo {
-			float: left;
-			margin-right: 20px;
-		}
-		.header-image {
-			display: block;
-			margin-left: 500px;
-		}
-
-		.promo-image {
-			float: left;
-			height: 30px;
-			margin-right: 120px;
-		}
-		p {
-			clear: left;
-		}
-		body {
-			background-color: #000000;
-			color: #FFFFFF;
-			font-family: Arial, sans-serif;
-			font-size: 14px;
-			line-height: 1.5;
-			background-image: url("img/backgroundyup.gif");
-			background-repeat: repeat;
-			background-size: contain;
-			overflow: hidden;
-		}
-		.header {
-			position: relative;
-			background-repeat: repeat;
-			background-size: contain;
-			background-position: center;
-			z-index: 1;
-		}
-		
-		h1 {
-			font-size: 36px;
-			text-align: center;
-			text-transform: uppercase;
-			letter-spacing: 4px;
-			margin-top: 50px;
-		}
-		
-		h2 {
-			font-size: 24px;
-			text-align: center;
-			text-transform: uppercase;
-			letter-spacing: 2px;
-		}
-		
-		p {
-			margin: 20px 0;
-			text-align: justify;
-		}
-		
-		.container {
-			position: absolute;
-			top: 0;
-			left: 0;
-			right: 0;
-			bottom: 0;
-			margin: auto;
-			padding: 20px;
-			background-color: #FFC0CB;
-			border: 2px solid #000000;
-			border-radius: 10px;
-			box-shadow: 5px 5px 5px #888888;
-			z-index: -1; /* To put the container behind the other elements */
-		}
-		
-		.btn {
-			position: absolute;
-			top: calc(50% - 100px);
-			left: calc(50% - 50px);
-			display: inline-block;
-			padding: 10px 20px;
-			background-color: #00000;
-			background-image: url("img/button.gif");
-			color: #FFFFFF;
-			text-decoration: none;
-			border-radius: 5px;
-			z-index: 1;
-			height: 40px;
-		}
-		.icons {
-			position: absolute;
-			display: flex;
-			justify-content: center;
-			align-items: center;
-			top: 80%;
-			left: 50%;
-			transform: translate(-50%, -50%);
-			z-index: 1;
-		}
-
-		.icons a {
-			animation: hover 1s infinite;
-			border: none;
-			bottom: calc(50%-75px);
-			display: inline-block;
-			margin: 20px;
-			background-color: transparent;
-			color: #000000
-			border-radius: 10%;
-			width: 60px;
-			max-height: 50px;
-			height: 5px;
-			line-height: 10px;
-			font-size: 24px;
-			text-align: center;
-			text-decoration: none;
-		}
-		@keyframes hover {
-			0%, 100% {
-				transform: translateY(0);
-			}
-			50% {
-				transform: translateY(-30px);
-			}
-		}
-		.gifs {
-			display: flex;
-			flex-wrap: wrap;
-			justify-content: center;
-			margin: 50px 0;
-			animation-name: scroll;
-			animation-timing-function: linear;
-			overflow: hidden;
-			white-space: nowrap;
-		}
-		.gifs img {
-			max-width: 300px;
-			margin: 40px;
-			transform: rotate(-15deg);
-			display: inline-block;
-    		width: 140px;
-		}
-		.gifs-wrapper {
-			display: inline-block;
-			overflow: hidden;
-			animation: scroll 20s linear infinite;
-			position: absolute;
-			top: 35%;
-			transform: translateY(-50%) transformX(100%);
-			left: 150%;
-			width: 350%;
-			animation-direction: alternate;
-		}
-		@keyframes scroll {
-			0% { transform: translateX(0); }
-			100% { transform: translateX(-100%); }
-			101% { transform: translateX(100%); }
-		}
-		.rainbow-text {
-			position: relative;
-			top: -450px;
-			right: -50px;
-			animation: rainbow 1s linear infinite;
-		}
-		@keyframes rainbow {
-			0% {
-				color: red;
-			}
-			17% {
-				color: orange;
-			}
-			34% {
-				color: yellow;
-			}
-			51% {
-				color: green;
-			}
-			68% {
-				color: blue;
-			}
-			85% {
-				color: indigo;
-			}
-			100% {
-				color: violet;
-			}
-		button {
-			margin-top: -100px;
-		}
-		.my-text {
-			position: absolute;
-			top: 400px;
-			left: 50px;
-		}
-		#kestrel-img {
-			position: relative;
-			left: 100px;
-			top: 200px;
-  }
-	}
-	</style>
+    <meta charset="utf-8">
+    <link rel="icon" type="image/gif" href="images/k.gif">
+    <title>Ayy girl.. welcome to my site! hah..</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+    <link rel="icon" sizes="192x192" href="images/android-chrome-192.png">
 </head>
 <body>
-	<p class="soundtext">If you can't hear my music, then you must be blocking it girl!</p>
-	<img src="img/backgroundyup.gif">
-	<h1 class="rainbow-text">CONCERT TICKETS AVAILABLE SOON!</h1>
-	<button class="btn" onclick="window.open('https://www.teepublic.com/user/viral-s-tees', '_blank')">MERCH</button>
-	<div class="icons">
-		<a href="#"><img src="img/starspin.gif" alt="it spin"></a>
-		<a href="#"><img src="img/dice.gif" alt="dicem"></a>
-		<a href="#"><img src="img/lampmst.gif" alt="Lava Lamp"></a>
-		<a href="#"><img src="img/laptop.gif" alt="SSAlmao"></a>
-		<a href="#"><img src="img/compoot.gif" alt="computer"></a>
-		<a href="#"><img src="img/note.gif" alt="note"></a>
-		<a href="#"><img src="img/plane.gif" alt="plane weee"></a>
-		<a href="#"><img src="img/zemusic.gif" alt="note2"></a>
-		<a href="#"><img src="img/ayamusic.gif" alt="beebooboobop"></a>
-	</div>
-	<div class="gifs">
-		<div class="gifs-wrapper">
-			<img src="img/robot.gif">
-			<img src="img/shirt 1.png">
-			<img src="img/shirt2.png">
-			<img src="img/towel.png">
-			<img src="img/chadsticker.png">
-			<img src="img/kestrelsticker.png">
-			<img src="img/chancesticker.png">
-			<img src="img/kirk_sticker.png">
-			<img src="img/mindctrlsticker.png">
-			<img src="img/logosticker.png">
-			<img src="img/robot.gif">
-		</div>
-	<audio autoplay id="sparkleSound">
-		<source src="audio/sparklesound.mp3" type="audio/mpeg">
-	</audio>
-	<audio loop id="backgroundMusic">
-		<source src="audio/musiclmao.mp3" type="audio/mpeg">
-	</audio>
-	<script>
-		window.addEventListener('load', function() {
-			var sparkleSound = document.getElementById('sparkleSound');
-			sparkleSound.play();
-		});
-		var backgroundMusic = document.getElementById('backgroundMusic');
-		sparkleSound.addEventListener('ended', function() {
-			backgroundMusic.play();
-		});
-	</script>
+    <div id="container">
+        
+    <!-- Use the header area for this website name or logo-->
+    <header>
+        <img class="logo" src="images/cube.gif" alt="rotating kestrel cube">
+        <img class="header-image" src="images/kestrelmercLOGO.gif" alt="webbsite header image">
+        <img class="promo-image" src="images/sparklykestrel.gif" alt="sparkly kestrel">
+    </header>
+    
+    <!-- Use the nav area to add hyperlinks to other pages within the website -->
+    <button class="btn" onclick="window.open('https://www.teepublic.com/user/viral-s-tees', '_blank')">MERCH</button>
+
+    
+    <!-- Use the main area to add main content of the webpage -->
+    <main id="content">    
+        
+        <div class="icons">
+            <a href="#"><img src="images/starspin.gif" alt="it spin"></a>
+            <a href="#"><img src="images/dice.gif" alt="dicem"></a>
+            <a href="#"><img src="images/lampmst.gif" alt="Lava Lamp"></a>
+            <a href="#"><img src="images/laptop.gif" alt="SSAlmao"></a>
+            <a href="#"><img src="images/compoot.gif" alt="computer"></a>
+            <a href="#"><img src="images/note.gif" alt="note"></a>
+            <a href="#"><img src="images/plane.gif" alt="plane weee"></a>
+            <a href="#"><img src="images/zemusic.gif" alt="note2"></a>
+            <a href="#"><img src="images/ayamusic.gif" alt="beebooboobop"></a>
+        </div>
+        
+    </main>
+    
+    <!-- Use the footer area to add webpage footer content -->
+    <footer>
+        
+        <div class="copyright">
+            <p>&copy; Copyright 7547. All Rights Reserved to Midt Labs Coorp.</p> 
+        </div>
+        
+        <div class="social">
+            
+            <a href="https://www.youtube.com/watch?v=tqP-KDkKIEw" target="_blank"><img src="images/logosticker.png" alt="viral genesis logo"></a> 
+            <a href="https://twitter.com/GenesisViral" target="_blank"><img src="images/kestrelstwitteracount.jpg" alt="black and white Twitter logo"></a>
+            
+        </div>
+        
+        
+        
+    </footer>
+        
+    </div>
+    
 </body>
 </html>

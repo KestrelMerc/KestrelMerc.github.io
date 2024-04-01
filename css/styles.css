@@ -1,0 +1,43 @@
+/*
+Author: Chris D
+Date: 4/1/2024
+File Name: styles.css
+*/
+
+/* CSS Reset */
+body, header, main, nav, footer, h1, div, img, ul, figure, figcaption, section, article, aside, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+body {
+    background-image: url("file:///C:/Users/Administrator/Desktop/kestrelmerc/images/twinkles.gif");
+    background-attachment: fixed;
+    background-repeat: repeat;
+    background-position: center;
+    overflow-x: hidden;
+}
+
+.btn {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    display: inline-block;
+    padding: 10px 20px;
+    background-image: url("images/button.gif");
+    color: #fff;
+    border-radius: 5px;
+    z-index: 1;
+}
+
+
+
+
+
+
+
+
+
+
+
