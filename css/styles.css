@@ -19,27 +19,33 @@ cursor {
     cursor: url
 }
 
-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    flex-wrap: wrap;
+#header-grid {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
 }
 
-.logo {
-    width: clamp(10%, 15%, 50%);
-    height: auto;
-    margin-bottom: 2px;
+#header-grid img {
+    max-width: 100%;
+    padding: 2px;
 }
 
-.header-image {
-    width: clamp(50%, 50%, 75%);
+#header-grid :nth-child(1){
+    grid-column: 1/2;
+    grid-row: 1;
 }
 
-.promo-image {
-    width: clamp(40%, 50%, 50%);
-    height: auto;
+#header-grid :nth-child(2){
+    width: 100%;
+    grid-column: 2/8;
+    grid-row: 1;
 }
+
+#header-grid :nth-child(3){
+    width: 100%;
+    grid-column: 8/8;
+    grid-row: 1;
+}
+
 
 body {
     background-image: url("https://i.gifer.com/WBVk.gif");
@@ -64,8 +70,6 @@ body {
 .btn:hover {
     cursor: url("https://i.gifer.com/XVny.gif"), auto;
 }
-
-
 
 
 
