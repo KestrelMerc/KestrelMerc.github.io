@@ -11,12 +11,17 @@ body, header, main, nav, footer, h1, div, img, ul, figure, figcaption, section, 
     border: 0;
 }
 
+.container {
+    display: flex;
+}
+
 body {
-    background-image: url("file:///C:/Users/Administrator/Desktop/kestrelmerc/images/twinkles.gif");
+    background-image: ;
     background-attachment: fixed;
     background-repeat: repeat;
     background-position: center;
     overflow-x: hidden;
+    background-color: aquamarine
 }
 
 .btn {
