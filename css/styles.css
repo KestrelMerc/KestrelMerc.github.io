@@ -11,13 +11,28 @@ body, header, main, nav, footer, h1, div, img, ul, figure, figcaption, section, 
     border: 0;
 }
 
-.container {
+* {
+    box-sizing: border-box;
+}
+
+header {
     display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.logo {
+    height: auto;
+    width: 15%;
+}
+
+.header-image {
+    align-content: center;
+    padding-top: 40px;
 }
 
 body {
     background-image: url("https://i.gifer.com/WBVk.gif");
-    background-attachment: fixed;
     background-repeat: repeat;
     background-position: center;
     overflow-x: hidden;
@@ -35,10 +50,6 @@ body {
     border-radius: 5px;
     z-index: 1;
 }
-
-
-
-
 
 
 
