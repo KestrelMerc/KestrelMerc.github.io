@@ -15,20 +15,30 @@ body, header, main, nav, footer, h1, div, img, ul, figure, figcaption, section, 
     box-sizing: border-box;
 }
 
+cursor {
+    cursor: url
+}
+
 header {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
+    flex-wrap: wrap;
 }
 
 .logo {
+    width: clamp(10%, 15%, 50%);
     height: auto;
-    width: 15%;
+    margin-bottom: 2px;
 }
 
 .header-image {
-    align-content: center;
-    padding-top: 40px;
+    width: clamp(50%, 50%, 75%);
+}
+
+.promo-image {
+    width: clamp(40%, 50%, 50%);
+    height: auto;
 }
 
 body {
