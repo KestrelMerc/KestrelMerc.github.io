@@ -39,6 +39,20 @@
 
         <!-- Use the nav area to add hyperlinks to other pages within the website -->
         <button class="btn" onclick="window.open('https://www.teepublic.com/user/viral-s-tees', '_blank')">MERCH</button>
+        
+        <div class="grid-container">
+                <div class="grid-item"><img src="images/robot.gif"></div>
+                <div class="grid-item"><img src="images/shirt 1.png"></div>
+                <div class="grid-item"><img src="images/shirt2.png"></div>
+                <div class="grid-item"><img src="images/towel.png"></div>
+                <div class="grid-item"><img src="images/chadsticker.png"></div>
+                <div class="grid-item"><img src="images/kestrelsticker.png"></div>
+                <div class="grid-item"><img src="images/chancesticker.png"></div>
+                <div class="grid-item"><img src="images/kirk_sticker.png"></div>
+                <div class="grid-item"><img src="images/mindctrlsticker.png"></div>
+                <div class="grid-item"><img src="images/logosticker.png"></div>
+                <div class="grid-item"><img src="images/robot.gif"></div>
+            </div>
 
         <!-- Use the main area to add main content of the webpage -->
         <main id="content">    
@@ -55,19 +69,7 @@
                 <a href="#"><img src="images/ayamusic.gif" alt="beebooboobop"></a>
             </div>
             
-            <div class="gifs">
-			 <img src="images/robot.gif">
-			 <img src="images/shirt 1.png">
-			 <img src="images/shirt2.png">
-			 <img src="images/towel.png">
-			 <img src="images/chadsticker.png">
-			 <img src="images/kestrelsticker.png">
-			 <img src="images/chancesticker.png">
-			 <img src="images/kirk_sticker.png">
-			 <img src="images/mindctrlsticker.png">
-			 <img src="images/logosticker.png">
-			 <img src="images/robot.gif">
-            </div>
+
 
         </main>
 
@@ -90,6 +92,16 @@
         </footer>
 
     </div>
+    <script>
+		window.addEventListener('load', function() {
+			var sparkleSound = document.getElementById('sparkleSound');
+			sparkleSound.play();
+		});
+		var backgroundMusic = document.getElementById('backgroundMusic');
+		sparkleSound.addEventListener('ended', function() {
+			backgroundMusic.play();
+		});
+	</script>
     
 </body>
 </html>

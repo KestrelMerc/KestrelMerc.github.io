@@ -43,10 +43,16 @@ body, header, main, nav, footer, h1, div, img, ul, figure, figcaption, section, 
 }
 
 .icons {
+    padding-top: 200px;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     flex-wrap: wrap;
+}
+
+.gifs img {
+    transform: rotate(-45deg);
+    display: inline-block;
 }
 
 .gifs {
@@ -79,5 +85,34 @@ body {
     cursor: url("https://i.gifer.com/XVny.gif"), auto;
 }
 
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+    grid-gap: 10px;
+    flex-wrap: nowrap;
+}
 
+.grid-item {
+    flex: 1 0 100px;
+    margin: 5px;
+}
+
+.grid-item img {
+    max-width: 150%;
+    height: auto;
+}
+
+.social {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.social a {
+    margin-left: 10px;
+}
+
+.social img {
+    max-width: 100px;
+    height: auto;
+}
 
