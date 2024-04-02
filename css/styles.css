@@ -68,11 +68,11 @@ body {
 }
 
 .btn {
-    position: relative;
-    margin: 200px;
-    top: 50%;
-    left: 30%;
+    margin: 13em auto;
+    top: 10%;
+    left: 20%;
     display: grid;
+    grid-column: repeat(10, 1fr);
     padding: 20px 30px;
     background-image: url("https://i.gifer.com/7ZlE.gif");
     color: #ffff;
