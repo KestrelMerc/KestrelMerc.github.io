@@ -47,7 +47,6 @@ body, header, main, nav, footer, h1, div, img, ul, figure, figcaption, section, 
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    flex-wrap: wrap;
 }
 
 .gifs img {
